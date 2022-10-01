@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { /* Colors */
+  --text: #c0caf5;
+  --bg: #24283b;
+
+  --red: #f7768e;
+  --blue: #7aa2f7;
+  --green: #9ece6a;
+  --orange: #ff9e64;
+  --teal: #73daca;
+  --yellow: #e0af68;
+  --magenta: #bb9af7;
+}
+
+body {
+  height: 100vh;
+  background-image: url(bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Helvetica;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+nav { /* navbar */
+  background-color: var(--bg);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+ul { /* link list */
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+a { /* links */
+  color: var(--text);
+  text-decoration: none;
+}
+
+a:hover { /* on link hover */
+  text-decoration: underline;
+  color: white;
+}
+
+h1 { /* header tag */
+  color: white;
+}
+
+/* navbar response */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+  }
+
+  ul {
+    flex-direction: column;
+    order: 1;
+    font-size: 1.5rem;
+    gap: 1.5rem;
+  }
+}
+
+/* stylesheet - Gesty Linaga */
