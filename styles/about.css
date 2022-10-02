@@ -1,7 +1,8 @@
 /* About Section with Scroll Animations */
 
 body {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   background-image: url(../imgs/aboutBg.png);
   background-position: center;
   background-size: cover;
@@ -9,14 +10,15 @@ body {
   background-attachment: fixed;
 }
 
-h2 {
+h2 { /* headers */
   color: var(--red);
+  font-size: 5rem;
   text-shadow: 3px 3px 5px var(--bg);
 }
 
-p { /* text color */
+p { /* text */
   color: var(--text);
-  font-size: 2rem;
+  font-size: 3rem;
   text-shadow: 3px 3px 5px black;
 }
 
@@ -68,11 +70,25 @@ a.page {
   font-size: 4rem;
   color: var(--text);
   text-shadow: 2px 2px 5px var(--bg);
+  text-decoration: underline overline var(--bg);
+}
+
+a.page:hover {
+  color: var(--green);
+  text-shadow: 2px 2px 5px var(--bg);
+  text-decoration: underline overline var(--bg);
+
 }
 
 @media (max-width: 600px) { /* reactivity to thin screens */
   .logos {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  p {
+    font-size: 2rem;
   }
 }
