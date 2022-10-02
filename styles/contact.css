@@ -1,0 +1,52 @@
+/* Contact Form stylesheet */
+
+body {
+  background-image: url(../imgs/contactBg.png);
+}
+h2 {
+  color: var(--red);
+}
+.contact-box {
+  width: 500px;
+  background-color: var(--bg);
+  box-shadow: 0 0 15px 0 var(--magenta);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  border-radius: 1rem;
+}
+
+form {
+  margin: 10px;
+}
+
+.input-field {
+  width: 400px;
+  height: 40px;
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 2px solid black;
+  border-radius: 14px;
+  outline: none;
+}
+
+.textarea-field {
+  height: 150px;
+}
+
+button {
+  border-radius: 2rem;
+  color: var(--bg);
+  padding: 5px;
+  background-color: var(--blue);
+  font-size: 12px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--green);
+  filter: blur(1px);
+}
