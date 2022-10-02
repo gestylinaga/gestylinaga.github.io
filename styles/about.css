@@ -1,7 +1,12 @@
 /* About Section with Scroll Animations */
 
 body {
-  background-image: url(../imgs/aboutBg.png)
+  height: 100vh;
+  background-image: url(../imgs/aboutBg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h2 {
@@ -39,7 +44,7 @@ section {
 .logos {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .logo:nth-child(2) {
@@ -63,4 +68,11 @@ a.page {
   font-size: 4rem;
   color: var(--text);
   text-shadow: 2px 2px 5px var(--bg);
+}
+
+@media (max-width: 600px) { /* reactivity to thin screens */
+  .logos {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
