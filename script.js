@@ -1,4 +1,36 @@
 // hello - Gesty Linaga
+
+/* About Section Scroll Script:
+  Using `IntersectionObserver` to check if section is in view aka being observed
+  If a section is intersecting the observer, add class 'show'
+  Otherwise it's 'hidden'
+*/
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+});
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
+
+
+// Contact Form Popup Box
+function openContactBox() {
+  document.getElementById("contactForm").style.display = "block";
+}
+
+function closeContactBox() {
+  document.getElementById("contactForm").style.display = "none";
+}
+
+
+// Random Ascii Signature
 const sig = [`
   ╔═╗┌─┐┌─┐┌┬┐┬ ┬  ╦  ┬┌┐┌┌─┐┌─┐┌─┐
   ║ ╦├┤ └─┐ │ └┬┘  ║  ││││├─┤│ ┬├─┤
@@ -45,15 +77,4 @@ Y8b d88P                          Y8b d88P
                                    '-------'                          
   `,
 ]
-//random choice of ascii signature
 console.log(sig[Math.floor(Math.random() * sig.length)])
-
-
-// Contact Form Popup Box
-function openContactBox() {
-  document.getElementById("contactForm").style.display = "block";
-}
-
-function closeContactBox() {
-  document.getElementById("contactForm").style.display = "none";
-}
