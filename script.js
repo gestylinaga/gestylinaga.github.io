@@ -1,4 +1,4 @@
-// hello - Gesty Linaga //
+// hello - Gesty Linaga
 const sig = [`
   ╔═╗┌─┐┌─┐┌┬┐┬ ┬  ╦  ┬┌┐┌┌─┐┌─┐┌─┐
   ║ ╦├┤ └─┐ │ └┬┘  ║  ││││├─┤│ ┬├─┤
@@ -47,3 +47,13 @@ Y8b d88P                          Y8b d88P
 ]
 //random choice of ascii signature
 console.log(sig[Math.floor(Math.random() * sig.length)])
+
+
+// Contact Form Popup Box
+function openContactBox() {
+  document.getElementById("contactForm").style.display = "block";
+}
+
+function closeContactBox() {
+  document.getElementById("contactForm").style.display = "none";
+}

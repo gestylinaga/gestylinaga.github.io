@@ -59,6 +59,72 @@ h1 { /* header tag */
   color: white;
 }
 
+/*       */
+
+h2 {
+  color: var(--magenta);
+}
+
+.contactButton {
+  font-size: 1.3rem;
+  background: var(--bg);
+  color: var(--text);
+  border: none;
+}
+
+.contactButton:hover {
+  background: var(--magenta);
+  color: var(--bg);
+}
+
+.contactBoxPopup {
+  display: none;
+}
+
+.contactBox {
+  width: 300px;
+  margin: 10px;
+  gap: 7px;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--blue);
+  position: absolute;
+  padding: 5px;
+}
+
+.messageBox {
+  width: 250px;
+}
+
+.sendButton {
+  background: var(--blue);
+  width: 50px;
+  border-radius: 1rem;
+  padding: 3px;
+  border-style: none;
+}
+
+.sendButton:hover {
+  background: var(--green);
+}
+
+.closeButton {
+  background: var(--red);
+  border-radius: 1rem;
+  padding: 3px;
+  border-style: none;
+}
+
+.closeButton:hover {
+  background: var(--orange);
+}
+
+/*       */
+
 /* navbar response */
 @media (max-width: 600px) {
   nav {
