@@ -19,17 +19,6 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
-
-// Contact Form Popup Box
-function openContactBox() {
-  document.getElementById("contactForm").style.display = "block";
-}
-
-function closeContactBox() {
-  document.getElementById("contactForm").style.display = "none";
-}
-
-
 // Random Ascii Signature
 const sig = [`
   ╔═╗┌─┐┌─┐┌┬┐┬ ┬  ╦  ┬┌┐┌┌─┐┌─┐┌─┐

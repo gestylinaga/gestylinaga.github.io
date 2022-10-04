@@ -9,30 +9,18 @@
     <script defer type="text/javascript" src="script.js"></script>
   </head>
 
-  <body style="background-image:url(./imgs/aboutBg.png);">
+  <body style="background-image:url(./imgs/aboutBg.png); height:100%;">
     <a name="top"></a> <!-- top anchor -->
 
     <nav>
       <ul>
         <li><a href="./">Home</a></li>
         <li><a href="./about">About</a></li>
+        <li><a href="./contact">Contact</a></li>
         <li><a href="https://github.com/gestylinaga">Github</a></li>
-        <li><button class="contactButton" onclick="openContactBox()">Contact</button></li>
       </ul>
       <h1>About Me</h1>
     </nav>
-
-    <div class="contactBoxPopup" id="contactForm">
-      <form action="https://formsubmit.co/28e09e581057c42cd0d663025908a1dc" method="POST" class="contactBox">
-        <h3>Leave a Message</h3>
-        <input type="text" name="name" placeholder="name" required>
-        <input type="email" name="email" placeholder="email" required>
-        <textarea type="text" name="message" class="messageBox" 
-          placeholder="your message" rows="5" maxlength="280" required></textarea>
-        <button type="submit" class="sendButton">Send</button>
-        <button class="closeButton" onclick="closeContactBox()">Close Box</button>
-      </form>
-    </div>
 
     <section class="hidden">
       <h2>Hi</h2>

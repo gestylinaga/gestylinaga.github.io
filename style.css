@@ -86,22 +86,6 @@ h2 {
   text-shadow: 3px 3px 5px var(--bg);
 }
 
-.contactButton {
-  font-size: 1.3rem;
-  background: var(--bg);
-  color: var(--text);
-  border: none;
-}
-
-.contactButton:hover {
-  background: var(--magenta);
-  color: var(--bg);
-}
-
-.contactBoxPopup {
-  display: none;
-}
-
 .contactBox {
   width: 300px;
   margin: 10px;
@@ -112,8 +96,11 @@ h2 {
   align-items: center;
   justify-content:center;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
+  box-shadow: 0 0 1rem 0 var(--teal);
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   padding: 5px;
 }
 
@@ -133,16 +120,6 @@ h2 {
   background: var(--green);
 }
 
-.closeButton {
-  background: var(--red);
-  border-radius: 1rem;
-  padding: 3px;
-  border-style: none;
-}
-
-.closeButton:hover {
-  background: var(--orange);
-}
 
 /* Scrolling Sections */
 h3 {
