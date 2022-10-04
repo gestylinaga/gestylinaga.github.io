@@ -59,7 +59,7 @@ h1 { /* header tag */
   color: white;
 }
 
-/*       */
+/* Contact Box */
 
 h2 {
   color: var(--magenta);
@@ -122,8 +122,6 @@ h2 {
 .closeButton:hover {
   background: var(--orange);
 }
-
-/*       */
 
 /* navbar response */
 @media (max-width: 600px) {
