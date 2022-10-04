@@ -128,15 +128,19 @@ h3 {
   text-shadow: 3px 3px 5px var(--bg);
 }
 
+.paraBox {
+  box-shadow: 0 0 5px 2px rbga(50, 50, 50, 0.25);
+  background: var(--bg);
+  backdrop-filter: blur(50px);
+  border-radius: 2rem;
+}
+
 p { /* text */
   color: var(--text);
-  background: var(--bg);
   font-size: 2rem;
-  border: 1px solid var(--bg);
   padding: 2px;
-  margin: 1rem;
-  text-shadow: 3px 3px 5px black;
-  box-shadow: 3px 3px 5px var(--bg);
+  margin: 5px;
+  text-shadow: 5px 5px 10px var(--bg);
 }
 
 section {
