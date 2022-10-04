@@ -10,16 +10,40 @@ body {
   background-attachment: fixed;
 }
 
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+
+body::-webkit-scrollbar-thumb {
+  background: var(--blue);
+}
+
 h2 { /* headers */
   color: var(--red);
   font-size: 5rem;
   text-shadow: 3px 3px 5px var(--bg);
 }
 
+h3 {
+  color: var(--blue);
+  font-size: 3rem;
+  text-shadow: 3px 3px 5px var(--bg);
+}
+
 p { /* text */
   color: var(--text);
-  font-size: 3rem;
+  background: var(--bg);
+  font-size: 2rem;
+  border: 1px solid var(--bg);
+  padding: 2px;
+  margin: 1rem;
   text-shadow: 3px 3px 5px black;
+  box-shadow: 3px 3px 5px var(--bg);
 }
 
 section {
@@ -62,7 +86,7 @@ section {
 }
 
 .profile {
-  border: solid var(--bg);
+  border: 2px solid black;
   border-radius: 2rem;
 }
 
@@ -88,7 +112,10 @@ a.page:hover {
   h2 {
     font-size: 3.5rem;
   }
-  p {
+  h3 {
     font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
   }
 }
