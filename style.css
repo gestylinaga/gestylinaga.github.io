@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  /* google font */
+  font-family: 'Gochi Hand', cursive;
 }
 
 :root { /* Colors */
@@ -27,9 +30,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: Helvetica;
   font-size: 1.3rem;
   text-align: center;
+  /*font-family: Helvetica;*/
 }
 
 body::-webkit-scrollbar {
