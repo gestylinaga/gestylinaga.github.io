@@ -70,6 +70,7 @@ a { /* links */
   font-size: 1.5rem;
   color: var(--text);
   text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 a:hover { /* on link hover */
@@ -137,6 +138,7 @@ h2 {
 
 .messageBox {
   width: 250px;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .sendButton {
@@ -174,6 +176,7 @@ p { /* text */
   padding: 2px;
   margin: 5px;
   text-shadow: 10px 10px 10px var(--bg);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 section {
@@ -227,6 +230,7 @@ a.page {
   color: var(--text);
   text-shadow: 2px 2px 5px var(--bg);
   text-decoration: underline overline var(--bg);
+  font-family: 'Gochi Hand', cursive;
 }
 
 a.page:hover {
