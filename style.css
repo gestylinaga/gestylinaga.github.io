@@ -77,10 +77,16 @@ a:hover { /* on link hover */
   cursor: pointer;
 }
 
-h1 { /* header tag */
+h1 { /* Headers: */
   font-size: 2.5rem;
   color: white;
   text-shadow: 3px 3px 5px var(--black);
+}
+
+h2 {
+  color: var(--red);
+  font-size: 4rem;
+  text-shadow: 3px 3px 5px var(--bg);
 }
 
 .headerImg {
@@ -112,15 +118,39 @@ h1 { /* header tag */
   pointer-events: auto;
 }
 
-/* Contact Box */
-
-h2 {
-  color: var(--red);
-  font-size: 4rem;
-  text-shadow: 3px 3px 5px var(--bg);
+/* Contact Page */
+.contactPageMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-.contactBox {
+.selfPhotoBox {
+  background: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--blue);
+  padding: 10px;
+}
+
+
+.selfPhotoBox img {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--black);
+}
+
+.contactInfoBox {
+  background: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--blue);
+  padding: 10px;
+}
+
+.contactInfoBox p {
+  color: var(--text);
+}
+
+.contactMessageBox {
   width: 300px;
   margin: 10px;
   gap: 7px;
@@ -130,11 +160,7 @@ h2 {
   align-items: center;
   justify-content:center;
   border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--teal);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  box-shadow: 0 0 1rem 0 var(--blue);
   padding: 5px;
 }
 
@@ -291,5 +317,7 @@ a.page:hover {
     font-size: 1.5rem;
   }
 }
+
+
 
 /* CSS Stylesheet - Gesty Linaga */

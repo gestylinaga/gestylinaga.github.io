@@ -44,19 +44,39 @@
         </li><!-- End of dropdown -->
       </ul>
       <h1>Contact Me</h1>
-    </nav>
+    </nav> <!-- End of Navbar -->
 
-    <section class="hidden">
-      <div class="formBox">
-        <form action="https://formsubmit.co/28e09e581057c42cd0d663025908a1dc" method="POST" class="contactBox">
-          <h3>Leave a Message:</h3>
-          <input type="text" name="name" placeholder="name" required>
-          <input type="email" name="email" placeholder="email" required>
-          <textarea type="text" name="message" class="messageBox" 
-            placeholder="your message" rows="5" maxlength="280" required></textarea>
-          <button type="submit" class="sendButton">Send</button>
-        </form>
+    <section class="hidden contactPageMain">
+
+      <!-- Contact Info -->
+      <div class="contactInfoBox">
+        <h3>Contact Info:</h3>
+        <p><img src="../imgs/logoEmail.png" alt="email logo">
+          gesty@gesty.dev
+        </p>
+        <p><img src="../imgs/logoGithub.png" alt="github logo">
+          /gestylinaga
+        </p>
       </div>
+
+      <!-- Message Box -->
+      <form class="contactMessageBox" action="https://formsubmit.co/28e09e581057c42cd0d663025908a1dc" method="POST">
+        <h3>Leave a Message:</h3>
+        <input type="text" name="name" placeholder="name" required>
+        <input type="email" name="email" placeholder="email" required>
+        <textarea type="text" name="message" class="messageBox" 
+          placeholder="your message" rows="5" maxlength="280" required></textarea>
+        <button type="submit" class="sendButton">Send</button>
+      </form>
+
+
+
+      <!-- Picture of Me -->
+      <div class="selfPhotoBox">
+        <img src="../imgs/profileHeadshot.png" alt="Hey that's me!">
+        <h1 style="color: var(--blue);">Gesty Linaga</h1>
+      </div>
+
     </section>
   
   </body>
