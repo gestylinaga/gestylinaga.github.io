@@ -145,6 +145,10 @@ h2 {
   padding: 10px;
 }
 
+.contactLogo {
+  transform: translateY(7px);
+}
+
 .contactInfoBox p {
   color: var(--text);
 }
