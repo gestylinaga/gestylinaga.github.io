@@ -311,6 +311,11 @@ a.page:hover {
   h3 {
     font-size: 2rem;
   }
+
+  .headerImg {
+    width: 95vw;
+  }
+
   p {
     font-size: 1.5rem;
   }
@@ -321,6 +326,5 @@ a.page:hover {
     transform: translateY(25%);
   }
 }
-
 
 /* CSS Stylesheet - Gesty Linaga */
