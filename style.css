@@ -271,6 +271,15 @@ a.page:hover {
   cursor: pointer;
 }
 
+.projectsMain {
+  background-color: var(--bg);
+  color: var(--blue);
+  padding: 10px 50px 10px 50px;
+  text-align: left;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--blue);
+}
+
 /* Small Screen Response */
 @media (max-width: 600px) {
   body {
