@@ -93,31 +93,6 @@ h2 {
   box-shadow: 0 0 1rem 0 var(--bg);
 }
 
-/* Projects Popup Box */
-.dropdown {
-  position: absolute;
-  width: 200px;
-  opacity: 0;
-  z-index: 2;
-  background: var(--bg);
-  border-radius: 10px;
-  margin: 5px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-
-  box-shadow: 0 0 1rem 0 var(--blue);
-  transform: translateY(40%);
-
-  transition: opacity .15s ease-out;
-}
-
-.has-dropdown:focus-within .dropdown {
-  opacity: 1;
-  pointer-events: auto;
-}
-
 /* Contact Page */
 .contactPageMain {
   display: flex;
@@ -271,6 +246,11 @@ a.page:hover {
   cursor: pointer;
 }
 
+/* Projects Page */
+.projectHeader {
+  transform: translateX(-75%);
+}
+
 .projectsMain {
   background-color: var(--bg);
   color: var(--blue);
@@ -337,6 +317,14 @@ a.page:hover {
     display: flex;
     flex-direction: column;
     transform: translateY(25%);
+  }
+
+  .projectHeader {
+    transform: translateX(-50%);
+  }
+
+  .projectsMain {
+    width: 95vw;
   }
 }
 
