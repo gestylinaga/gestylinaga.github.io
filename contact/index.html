@@ -8,8 +8,6 @@
     <title>contact - Gesty Linaga</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
-
-
     <!-- google font: Gochi Hand -->
     <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <!-- google font: Source Sans Pro -->
@@ -30,64 +28,67 @@
   <body style="background-image:url(/imgs/contactBg.png);">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-4 fixed-top">
-      <div class="container">
-        <button 
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu">
+    <nav class="navbar navbar-expand-md bg-primary navbar-dark navbar-container px-4 py-4 fixed-top">
+      <div class="navbar-brand justify-content-start">
+        <h1>Gesty Linaga</h1>
+      </div>
+      <button 
+        class="navbar-toggler btn"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navmenu"
+        aria-controls="navmenu"
+        aria-expanded="true"
+        aria-label="Toggle Navigation">
+        <!--<i class="bi bi-text-center h3"></i>-->
         <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-start" id="navmenu">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/contact">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="/projects">Projects</a>
-            </li>
-          </ul>
-        </div>
-        <div class="navbar-brand justify-content-end"><h1>Gesty Linaga</h1></div>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="/projects">Projects</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
 
     <section class="hidden contactPageMain">
+      <div class="container">
+        
+        <div class="row g-1">
+          
+          <!-- Contact Info -->
+          <div class="col g-5">
+            <div class="contactInfoBox">
+              <h3>Contact Info:</h3>
+              <p><img class="contactLogo" src="../imgs/logoEmail.png" alt="email logo">
+                gesty@gesty.dev
+              </p>
+              <p><img class="contactLogo" src="../imgs/logoGithub.png" alt="github logo">
+                /gestylinaga
+              </p>
+            </div>
+          </div>
 
-      <!-- Contact Info -->
-      <div class="contactInfoBox">
-        <h3>Contact Info:</h3>
-        <p><img class="contactLogo" src="../imgs/logoEmail.png" alt="email logo">
-          gesty@gesty.dev
-        </p>
-        <p><img class="contactLogo" src="../imgs/logoGithub.png" alt="github logo">
-          /gestylinaga
-        </p>
-      </div>
+          <!-- Picture of Me -->
+          <div class="col g-5">
+            <div class="selfPhotoBox">
+              <img src="../imgs/profileHeadshot.png" alt="Hey that's me!">
+              <h1 class="text-info">Gesty Linaga</h1>
+            </div>
+          </div>
 
-      <!-- Message Box 
-      <form class="contactMessageBox" action="https://formsubmit.co/28e09e581057c42cd0d663025908a1dc" method="POST">
-        <h3>Leave a Message:</h3>
-        <input type="text" name="name" placeholder="name" required>
-        <input type="email" name="email" placeholder="email" required>
-        <textarea type="text" name="message" class="messageBox" 
-          placeholder="your message" rows="5" maxlength="280" required></textarea>
-        <button type="submit" class="sendButton">Send</button>
-      </form>
-      -->
-
-      <!-- Picture of Me -->
-      <div class="selfPhotoBox">
-        <img src="../imgs/profileHeadshot.png" alt="Hey that's me!">
-        <h1 style="color: var(--blue);">Gesty Linaga</h1>
+        </div>
       </div>
 
     </section>
