@@ -36,26 +36,11 @@ body {
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
-
 body::-webkit-scrollbar-track {
   background: var(--bg);
 }
-
 body::-webkit-scrollbar-thumb {
   background: var(--blue);
-}
-
-nav { /* navbar */
-  width: 100%;
-  position: fixed;
-  background-color: var(--bg);
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  z-index: 1;
-  box-shadow: 0 0 1rem 0 var(--blue);
 }
 
 ul { /* link list */
