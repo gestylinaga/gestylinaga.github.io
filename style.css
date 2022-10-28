@@ -33,35 +33,31 @@ body {
   /*font-family: Helvetica;*/
 }
 
+.about { /* About page */
+  background-image:url(/imgs/aboutBg.png);
+  height: 100%;
+}
+
+.contact { /* Contact page */
+background-image:url(/imgs/contactBg.png);
+}
+
+.projects {
+  background-image:url(/imgs/projectsBg.png);
+}
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
-
 body::-webkit-scrollbar-track {
   background: var(--bg);
 }
-
 body::-webkit-scrollbar-thumb {
   background: var(--blue);
 }
 
-nav { /* navbar */
-  width: 100%;
-  position: fixed;
-  background-color: var(--bg);
-  padding: 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  z-index: 1;
+nav{
   box-shadow: 0 0 1rem 0 var(--blue);
-}
-
-ul { /* link list */
-  display: flex;
-  list-style: none;
-  gap: 1rem;
 }
 
 a { /* links */
@@ -128,37 +124,6 @@ h2 {
   color: var(--text);
 }
 
-.contactMessageBox {
-  width: 300px;
-  margin: 10px;
-  gap: 7px;
-  background: var(--bg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:center;
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
-  padding: 5px;
-}
-
-.messageBox {
-  width: 250px;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.sendButton {
-  background: var(--blue);
-  width: 50px;
-  border-radius: 1rem;
-  padding: 3px;
-  border-style: none;
-}
-
-.sendButton:hover {
-  background: var(--green);
-  cursor: pointer;
-}
 
 /* Scrolling Sections */
 h3 {
@@ -261,24 +226,14 @@ a.page:hover {
 }
 
 /* Small Screen Response */
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   body {
     background-position: center center;
     background-size: 100vh center;
   }
 
-  nav {
-    flex-direction: column;
-    gap: 5px;
-    padding: 5px;
-    top: 0;
-  }
-
-  ul {
-    flex-direction: column;
-    order: 1;
-    font-size: 1rem;
-    gap: 0.5rem;
+  .about {
+    background-color: var(--bg);
   }
 
   .dropdown {
@@ -288,21 +243,6 @@ a.page:hover {
   .logos {
     flex-direction: column;
     gap: 0.5rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-  a {
-    font-size: 1rem;
-  }
-
-  h2 {
-    font-size: 3.5rem;
-  }
-
-  h3 {
-    font-size: 2rem;
   }
 
   .headerImg {
@@ -316,15 +256,6 @@ a.page:hover {
   .contactPageMain {
     display: flex;
     flex-direction: column;
-    transform: translateY(25%);
-  }
-
-  .projectHeader {
-    transform: translateX(-50%);
-  }
-
-  .projectsMain {
-    width: 95vw;
   }
 }
 
