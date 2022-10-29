@@ -102,18 +102,6 @@ h2 {
   gap: 10px;
 }
 
-.selfPhotoBox {
-  background: var(--bg);
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
-  padding: 10px;
-}
-
-.selfPhotoBox img {
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--black);
-}
-
 .contactInfoBox {
   background: var(--bg);
   border-radius: 1rem;
@@ -122,7 +110,7 @@ h2 {
 }
 
 .contactLogo {
-  transform: translateY(7px);
+  transform: translateY(5px);
 }
 
 .contactInfoBox p {
@@ -136,6 +124,7 @@ h3 {
   font-size: 2rem;
   text-shadow: 3px 3px 5px var(--bg);
 }
+
 
 /* Paragraph Boxes
 .paraBox {
