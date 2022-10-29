@@ -42,8 +42,8 @@ body {
 background-image:url(/imgs/backgrounds/contactBg.png);
 }
 
-.projects {
-  background-image:url(/imgs/backgrounds/projectsBg.png);
+.portfolio {
+  background-image:url(/imgs/backgrounds/portfolioBg.png);
 }
 
 body::-webkit-scrollbar {
@@ -142,6 +142,10 @@ p { /* text */
   margin: 5px;
   text-shadow: 10px 10px 10px var(--bg);
   font-family: 'Source Sans Pro', sans-serif;
+}
+
+.smallText {
+  font-size: 1rem;
 }
 
 section {
