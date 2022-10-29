@@ -231,7 +231,11 @@ a.page:hover {
   }
 
   .about {
-    background-color: var(--bg);
+    background-image:url(/imgs/backgrounds/aboutBgMobile.png);
+  }
+
+  .portfolio {
+    background-image:url(/imgs/backgrounds/portfolioBgMobile.png);
   }
 
   .dropdown {
