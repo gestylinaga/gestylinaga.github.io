@@ -60,6 +60,11 @@ nav{
   box-shadow: 0 0 1rem 0 var(--blue);
 }
 
+.dropdown a:hover {
+  background-color: var(--blue);
+  color: var(--bg) !important;
+}
+
 a { /* links */
   font-size: 1.5rem;
   color: var(--text);
