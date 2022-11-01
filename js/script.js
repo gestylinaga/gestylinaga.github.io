@@ -5,7 +5,6 @@
   If a section is intersecting the observer, add class 'show'
   Otherwise it's 'hidden'
 */
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -15,9 +14,9 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
 
 // Random Ascii Signature
 const sig = [`
@@ -25,28 +24,17 @@ const sig = [`
   ║ ╦├┤ └─┐ │ └┬┘  ║  ││││├─┤│ ┬├─┤
   ╚═╝└─┘└─┘ ┴  ┴   ╩═╝┴┘└┘┴ ┴└─┘┴ ┴
   `,
-    `
-    ▄████  ██▓    
-   ██▒ ▀█▒▓██▒    
-  ▒██░▄▄▄░▒██░    
-  ░▓█  ██▓▒██░    
-  ░▒▓███▀▒░██████▒
-   ░▒   ▒ ░ ▒░▓  ░
-    ░   ░ ░ ░ ▒  ░
-  ░ ░   ░   ░ ░   
-        ░     ░  ░
-  `,
   `
                _       
    ___ ___ ___| |_ _ _ 
   | . | -_|_ -|  _| | |
   |_  |___|___|_| |_  |
-  |___|           |___|
+  |___|         🏄|___|
   `,
   `
                            888             
                            888             
-                           888             
+                        🏄 888             
  .d88b.   .d88b.  .d8888b  888888 888  888 
 d88P"88b d8P  Y8b 88K      888    888  888 
 888  888 88888888 "Y8888b. 888    888  888 
@@ -61,7 +49,7 @@ Y8b d88P                          Y8b d88P
   .-----.-----.-----|  |_.--.--.
   |  _  |  -__|__ --|   _|  |  |
   |___  |_____|_____|____|___  |
-  |_____|                |_____|
+  |_____|              🏄|_____|
                                 
                                 
   `,

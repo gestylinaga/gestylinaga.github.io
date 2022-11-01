@@ -1,3 +1,4 @@
+// gesty.dev
 * {
   margin: 0;
   padding: 0;
@@ -5,96 +6,122 @@
   font-family: 'Gochi Hand', cursive;
 }
 
-:root { /* Colors */
-  --text: #c0caf5;
-  --bg: #24283b;
-  --black: #1a1b26;
+// Colors:
+$text: #c0caf5;
+$bg: #24283b;
+$black: #1a1b26;
+$red: #f7768e;
+$blue: #7aa2f7;
+$green: #9ece6a;
+$orange: #ff9e64;
+$teal: #73daca;
+$yellow: #e0af68;
+$magenta: #bb9af7;
 
-  --red: #f7768e;
-  --blue: #7aa2f7;
-  --green: #9ece6a;
-  --orange: #ff9e64;
-  --teal: #73daca;
-  --yellow: #e0af68;
-  --magenta: #bb9af7;
+// Mixins:
+@mixin text-shadow-bg {
+  text-shadow: 2px 2px 5px $bg;
+}
+@mixin infoBox {
+  background: $bg;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 $blue;
+  padding: 10px;
 }
 
 body {
   width: 100%;
   height: 100vh;
   /*height: 100%; for scrolling bg on firefox */
-  background-image: url(./imgs/backgrounds/homeBg.png);
+  background-image: url(/imgs/backgrounds/homeBg.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 1.3rem;
   text-align: center;
-  /*font-family: Helvetica;*/
 }
 
-.about { /* About page */
+// Individual Background Images:
+.about {
   background-image:url(/imgs/backgrounds/aboutBg.png);
   height: 100%;
 }
-
-.contact { /* Contact page */
+.contact {
 background-image:url(/imgs/backgrounds/contactBg.png);
 }
-
 .portfolio {
   background-image:url(/imgs/backgrounds/portfolioBg.png);
+  height: 100%;
 }
 
+// Scrollbar
 body::-webkit-scrollbar {
   width: 0.5rem;
 }
 body::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: $bg;
 }
 body::-webkit-scrollbar-thumb {
-  background: var(--blue);
+  background: $blue;
 }
 
+// Navbar
 nav{
-  box-shadow: 0 0 1rem 0 var(--blue);
+  box-shadow: 0 0 1rem 0 $blue;
 }
-
 .dropdown a:hover {
-  background-color: var(--blue);
-  color: var(--bg) !important;
+  background-color: $blue;
+  color: $bg !important;
 }
 
-a { /* links */
+// Links
+a {
   font-size: 1.5rem;
-  color: var(--text);
+  color: $text;
   text-decoration: none;
   font-family: 'Source Sans Pro', sans-serif;
+  &:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+  }
+  &.page {
+    font-size: 4rem;
+    color: $text;
+    @include text-shadow-bg;
+    text-decoration: underline overline $bg;
+    font-family: 'Gochi Hand', cursive;
+    &:hover {
+      color: $green;
+      @include text-shadow-bg;
+      text-decoration: underline overline $bg;
+      cursor: pointer;
+    }
+  }
 }
 
-a:hover { /* on link hover */
-  text-decoration: underline;
-  color: white;
-  cursor: pointer;
-}
-
-h1 { /* Headers: */
+// Headers:
+h1 {
   font-size: 2.5rem;
   color: white;
-  text-shadow: 3px 3px 5px var(--black);
+  text-shadow: 3px 3px 5px $black;
 }
-
 h2 {
-  color: var(--red);
+  color: $red;
   font-size: 4rem;
-  text-shadow: 3px 3px 5px var(--bg);
+  @include text-shadow-bg;
 }
-
+h3 {
+  color: $blue;
+  font-size: 2rem;
+  @include text-shadow-bg;
+}
 .headerImg {
-  box-shadow: 0 0 1rem 0 var(--bg);
+  box-shadow: 0 0 1rem 0 $bg;
 }
 
-/* Contact Page */
+// Contact Page:
 .contactPageMain {
   display: flex;
   flex-direction: column;
@@ -102,43 +129,28 @@ h2 {
   align-items: center;
   gap: 10px;
 }
-
 .contactInfoBox {
-  background: var(--bg);
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
-  padding: 10px;
+  @include infoBox;
+  & p {
+    color: $text;
+  }
 }
 
-.contactInfoBox p {
-  color: var(--text);
-}
-
+// About Page:
 .aboutBox {
-  background: var(--bg);
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
-  padding: 10px;
+  @include infoBox;
   margin-top: 10px;
 }
 
-
-/* Scrolling Sections */
-h3 {
-  color: var(--blue);
-  font-size: 2rem;
-  text-shadow: 3px 3px 5px var(--bg);
-}
-
-p { /* text */
-  color: var(--text);
+// Paragraph Text:
+p {
+  color: $text;
   font-size: 1.5rem;
   padding: 2px;
   margin: 5px;
-  text-shadow: 10px 10px 10px var(--bg);
+  text-shadow: 10px 10px 10px $bg;
   font-family: 'Source Sans Pro', sans-serif;
 }
-
 .smallText {
   font-size: 1rem;
 }
@@ -153,58 +165,40 @@ section {
   z-index: -1;
 }
 
+// Animations:
 .hidden {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-10%);
   transition: all 1s;
 }
-
 .show {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
 }
 
+// Photo Animations:
 .logos {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 }
-
 .logo:nth-child(2) {
   transition-delay: 200ms;
 }
-
 .logo:nth-child(3) {
   transition-delay: 400ms;
 }
-
 .logo:nth-child(4) {
   transition-delay: 600ms;
 }
 
+// Profile Images:
 .profile {
   border-radius: 2rem;
-  box-shadow: 2px 2px 5px var(--bg);
+  box-shadow: 2px 2px 5px $bg;
 }
-
-a.page {
-  font-size: 4rem;
-  color: var(--text);
-  text-shadow: 2px 2px 5px var(--bg);
-  text-decoration: underline overline var(--bg);
-  font-family: 'Gochi Hand', cursive;
-}
-
-a.page:hover {
-  color: var(--green);
-  text-shadow: 2px 2px 5px var(--bg);
-  text-decoration: underline overline var(--bg);
-  cursor: pointer;
-}
-
-
 
 /* Small Screen Response */
 @media (max-width: 576px) {
@@ -212,24 +206,18 @@ a.page:hover {
     background-position: center center;
     background-size: 100vh center;
   }
-
   .dropdown {
     transform: translateY(25%);
   }
-
   .logos {
     flex-direction: column;
     gap: 0.5rem;
   }
-
   .headerImg {
     width: 95vw;
   }
-
   .contactPageMain {
     display: flex;
     flex-direction: column;
   }
 }
-
-/* CSS Stylesheet - Gesty Linaga */
