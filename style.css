@@ -114,6 +114,14 @@ h2 {
   color: var(--text);
 }
 
+.aboutBox {
+  background: var(--bg);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem 0 var(--blue);
+  padding: 10px;
+  margin-top: 10px;
+}
+
 
 /* Scrolling Sections */
 h3 {
@@ -123,8 +131,8 @@ h3 {
 }
 
 p { /* text */
-  color: white;
-  font-size: 2rem;
+  color: var(--text);
+  font-size: 1.5rem;
   padding: 2px;
   margin: 5px;
   text-shadow: 10px 10px 10px var(--bg);
@@ -216,10 +224,6 @@ a.page:hover {
 
   .headerImg {
     width: 95vw;
-  }
-
-  p {
-    font-size: 1.5rem;
   }
 
   .contactPageMain {

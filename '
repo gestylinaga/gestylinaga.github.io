@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Gesty Linaga">
-    <title>portfolio - Gesty Linaga</title>
+    <title>about - Gesty Linaga</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- google font: Gochi Hand -->
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet"> 
     <!-- google font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 
     <!-- Custom Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-
-    <!-- Custom css/js -->
+    <!-- Custom css/js-->
     <link rel="stylesheet" type="text/css" href="/style.css">
     <script defer type="text/javascript" src="/script.js"></script>
 
   </head>
-  <body class="portfolio">
+  <body class="about">
 
     <!-- Navbar -->
     <nav class="navbar nav navbar-expand-md bg-primary navbar-dark navbar-container px-4 py-4 fixed-top">
@@ -36,7 +38,7 @@
             <a class="nav-link text-light" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/portfolio">Portfolio</a>
+            <a class="nav-link text-light" href="/portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="/contact">Contact</a>
@@ -102,77 +104,96 @@
       </div>
     </nav> <!-- end of navbar -->
 
-    <!-- Card Sections -->
-    <section class="p-5">
-      <div class="container">
 
-        <!-- Row 1 -->
-        <div class="d-flex justify-content-center row text-center g-4 mt-5 hidden">
-          <h2>Personal Websites:</h2>
-
-          <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
-              <div class="card-body text-center">
-                <img class="img-fluid" src="/imgs/portfolio/banDeloviarScreenshot.png" alt="bandeloviar.com">
-                <h3 class="card-title mb-3">bandeloviar.com</h3>
-                <p class="card-text smallText">a Personal Portfolio Website for:</p>
-                <p class="card-text smallText">Ban Deloviar - Photographer</p>
-                <a class="btn btn-success" target="_blank" href="https://bandeloviar.com">Visit</a>
-              </div>
-            </div>
-          </div>
-          
-        <!-- Row 2 -->
-        <div class="d-flex justify-content-center row text-center g-4 hidden">
-          <h2>Side Projects:</h2>
-
-          <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
-              <div class="card-body text-center">
-                <img class="img-fluid" src="/imgs/portfolio/randomimgrScreenshot.png" alt="Random Imgr">
-                <h3 class="card-title mb-3">RandomImgr</h3>
-                <p class="card-text smallText">a Random image generator</p>
-                <p class="card-text smallText">Like lorem ipsum, but for images</p>
-                <a class="btn btn-success" target="_blank" href="https://gesty.dev/randomimgr">Visit</a>
-              </div>
-            </div>
-          </div>
-
-
-
-
-          <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
-              <div class="card-body text-center">
-                <img class="img-fluid" src="/imgs/portfolio/gestyScreenshot.png" alt="gesty.dev">
-                <h3 class="card-title mb-3">gesty.dev Source Code</h3>
-                <p class="card-text smallText">My personal website</p>
-                <p class="card-text smallText">View the source code hosted on GitHub</p>
-                <a class="btn btn-success" target="_blank" href="https://github.com/gestylinaga/gestylinaga.github.io">Visit</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
-              <div class="card-body text-center">
-                <img class="img-fluid" src="/imgs/portfolio/keykitScreenshot.png" alt="KeyKit">
-                <h3 class="card-title mb-3">KeyKit</h3>
-                <p class="card-text smallText">a Keyboard drumKit in your browser</p>
-                <p class="card-text smallText">Turn your keyboard into a mini drum kit!</p>
-                <a class="btn btn-success" target="_blank" href="https://gesty.dev/keykit">Visit</a>
-              </div>
-            </div>
-          </div>
-
-
-
-
+    <!-- Scrolling Sections -->
+    <section class="hidden">
+      <h2>Hi</h2>
+      <h3>I'm Gesty!</h3>
+      <div class="logos">
+        <div class="logo hidden">
+          <img class="profile" src="../imgs/profile/profileHeadshot.png" alt="Gesty Linaga">
         </div>
       </div>
     </section>
 
- 
+    <section class="hidden">
+      <h2>Skills</h2>
+      <h3>General/Scripting Languages</h3>
+      <div class="logos">
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoPython.png" alt="Python logo">
+        </div>
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoJs.png" alt="JavaScript logo">
+        </div>
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoLua.png" alt="Lua logo">
+        </div>
+      </div>
+      <div class="paraBox">
+        <p>Python & JavaScript & Lua</p>
+
+      <h3>Markup Languages</h3>
+      <div class="logos">
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoHtml.png" alt="HTML logo">
+        </div>
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoMarkdown.png" alt="MarkDown logo">
+        </div>
+      </div>
+      <div class="paraBox">
+        <p>
+        HTML 5 | MarkDown
+        </p>
+
+
+      </div>
+    </section>
+
+    <section class="hidden">
+      <h2>Skills</h2>
+
+      </div>
+    </section>
+
+    <section class="hidden">
+      <h2>Skills</h2>
+      <h3>Stylesheet Languages</h3>
+      <div class="logos">
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoCss.png" alt="CSS logo">
+        </div>
+        <div class="logo hidden">
+          <img src="../imgs/logos/logoSass.png" alt="Sass logo">
+        </div>
+      </div>
+      <div class="paraBox">
+        <p>
+        CSS 3 | Sass
+        </p>
+      </div>
+    </section>
+
+    <section class="hidden">
+      <h2>And</h2>
+      <h3>I Do Other things too:</h3>
+      <div class="logos">
+        <div class="logo hidden">
+          <img class="profile"  src="../imgs/profile/profileSurf.png" alt="surfing">
+        </div>
+        <div class="logo hidden">
+          <img class ="profile"  src="../imgs/profile/profileBike.png" alt="bicycle riding">
+        </div>
+        <div class="logo hidden">
+          <img class ="profile" src="../imgs/profile/profileCamp.png" alt="camping/hiking">
+        </div>
+
+      </div>
+    </section>
+
+    <a class="page" href="#">Back to top</a>
+
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
