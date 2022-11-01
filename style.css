@@ -110,10 +110,6 @@ h2 {
   padding: 10px;
 }
 
-.contactLogo {
-  transform: translateY(5px);
-}
-
 .contactInfoBox p {
   color: var(--text);
 }
@@ -125,16 +121,6 @@ h3 {
   font-size: 2rem;
   text-shadow: 3px 3px 5px var(--bg);
 }
-
-
-/* Paragraph Boxes
-.paraBox {
-  box-shadow: 0 0 5px 2px rbga(50, 50, 50, 0.25);
-  background: var(--bg);
-  backdrop-filter: blur(50px);
-  border-radius: 2rem;
-}
-*/
 
 p { /* text */
   color: white;
@@ -162,7 +148,7 @@ section {
 .hidden {
   opacity: 0;
   filter: blur(5px);
-  transform: translateX(-100%);
+  transform: translateX(-10%);
   transition: all 1s;
 }
 
@@ -210,19 +196,7 @@ a.page:hover {
   cursor: pointer;
 }
 
-/* Projects Page */
-.projectHeader {
-  transform: translateX(-75%);
-}
 
-.projectsMain {
-  background-color: var(--bg);
-  color: var(--blue);
-  padding: 10px 50px 10px 50px;
-  text-align: left;
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 var(--blue);
-}
 
 /* Small Screen Response */
 @media (max-width: 576px) {
