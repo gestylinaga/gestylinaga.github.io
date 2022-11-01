@@ -64,19 +64,6 @@ a:hover {
   color: white;
   cursor: pointer;
 }
-a.page {
-  font-size: 4rem;
-  color: #c0caf5;
-  text-shadow: 2px 2px 5px #24283b;
-  text-decoration: underline overline #24283b;
-  font-family: "Gochi Hand", cursive;
-}
-a.page:hover {
-  color: #9ece6a;
-  text-shadow: 2px 2px 5px #24283b;
-  text-decoration: underline overline #24283b;
-  cursor: pointer;
-}
 
 h1 {
   font-size: 2.5rem;
@@ -191,14 +178,14 @@ section {
     background-position: center center;
     background-size: 100vh center;
   }
-  .dropdown {
-    transform: translateY(25%);
+  .headerImg {
+    width: 95vw;
   }
   .logos {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .headerImg {
+  .aboutBox {
     width: 95vw;
   }
   .contactPageMain {

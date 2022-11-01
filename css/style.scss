@@ -86,19 +86,6 @@ a {
     color: white;
     cursor: pointer;
   }
-  &.page {
-    font-size: 4rem;
-    color: $text;
-    @include text-shadow-bg;
-    text-decoration: underline overline $bg;
-    font-family: 'Gochi Hand', cursive;
-    &:hover {
-      color: $green;
-      @include text-shadow-bg;
-      text-decoration: underline overline $bg;
-      cursor: pointer;
-    }
-  }
 }
 
 // Headers:
@@ -206,14 +193,14 @@ section {
     background-position: center center;
     background-size: 100vh center;
   }
-  .dropdown {
-    transform: translateY(25%);
+  .headerImg {
+    width: 95vw;
   }
   .logos {
     flex-direction: column;
     gap: 0.5rem;
   }
-  .headerImg {
+  .aboutBox {
     width: 95vw;
   }
   .contactPageMain {
