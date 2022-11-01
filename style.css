@@ -231,14 +231,6 @@ a.page:hover {
     background-size: 100vh center;
   }
 
-  .about {
-    background-image:url(/imgs/backgrounds/aboutBgMobile.png);
-  }
-
-  .portfolio {
-    background-image:url(/imgs/backgrounds/portfolioBgMobile.png);
-  }
-
   .dropdown {
     transform: translateY(25%);
   }
