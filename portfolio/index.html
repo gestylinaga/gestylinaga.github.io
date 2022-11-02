@@ -15,13 +15,14 @@
 
     <!-- Custom Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.css">
-
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Custom css/js -->
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <script defer type="text/javascript" src="/js/script.js"></script>
-
   </head>
+
   <body class="portfolio">
 
     <!-- Navbar -->
@@ -36,68 +37,11 @@
             <a class="nav-link text-light" href="/about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/portfolio">Portfolio</a>
+            <a class="nav-link text-info" href="/portfolio">Portfolio</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="/contact">Contact</a>
           </li>
-          <!-- Side projects dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link text-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Side Projects
-            </a>
-            <ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdown">
-              <li>
-                <a 
-                  class="dropdown-item text-light" 
-                  href="https://gesty.dev/keykit"
-                  data-bs-container="body"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  title="a Keyboard drumKit in your browser"
-                >KeyKit
-                </a>
-              </li>
-              <li>
-                <a 
-                  class="dropdown-item text-light" 
-                  href="https://gesty.dev/randomimgr"
-                  data-bs-container="body"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  title="like a lorem ipsum random text generator, but for images"
-                >Random Imgr
-                </a>
-              </li>
-              <li><hr class="dropdown-divider"></li>
-              <li>
-                <a 
-                  class="dropdown-item text-light" 
-                  href="https://github.com/gestylinaga/gestylinaga.github.io" 
-                  target="_blank"
-                  data-bs-container="body"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"                 
-                  title="Opens in a new tab
-                  source code for this website"
-                >gesty.dev
-                </a>
-              </li>
-              <li>
-                <a 
-                  class="dropdown-item text-light" 
-                  href="https://github.com/gestylinaga/drumDrum" 
-                  target="_blank"
-                  data-bs-container="body"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="left"
-                  title="Opens in a new tab
-                  source code for a drum sequencer built with Python"
-                >drumDrum
-                </a>
-              </li>
-            </ul>
-          </li> <!-- end of dropdown -->
         </ul>
       </div>
     </nav> <!-- end of navbar -->
@@ -107,11 +51,11 @@
       <div class="container mt-5">
 
         <!-- Row 1 -->
-        <div class="d-flex justify-content-center row text-center g-4 mt-5 hidden">
+        <div class="d-flex justify-content-center row text-center g-4 mt-5 hidden delay">
           <h2>Portfolio:</h2>
 
           <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
+            <div class="card bg-primary text-light hidden delay">
               <div class="card-body text-center">
                 <img class="img-fluid" src="/imgs/portfolio/banDeloviarScreenshot.png" alt="bandeloviar.com">
                 <h3 class="card-title mb-3">bandeloviar.com</h3>
@@ -123,11 +67,11 @@
           </div>
           
         <!-- Row 2 -->
-        <div class="d-flex justify-content-center row text-center g-4 hidden">
+        <div class="d-flex justify-content-center row text-center g-4 hidden delay">
           <h2>Side Projects:</h2>
 
           <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
+            <div class="card bg-primary text-light hidden delay">
               <div class="card-body text-center">
                 <img class="img-fluid" src="/imgs/portfolio/randomimgrScreenshot.png" alt="Random Imgr">
                 <h3 class="card-title mb-3">RandomImgr</h3>
@@ -139,7 +83,7 @@
           </div>
 
           <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
+            <div class="card bg-primary text-light hidden delay">
               <div class="card-body text-center">
                 <img class="img-fluid" src="/imgs/portfolio/gestyScreenshot.png" alt="gesty.dev">
                 <h3 class="card-title mb-3">gesty.dev</h3>
@@ -151,7 +95,7 @@
           </div>
 
           <div class="col-lg-3">
-            <div class="card bg-primary text-light hidden">
+            <div class="card bg-primary text-light hidden delay">
               <div class="card-body text-center">
                 <img class="img-fluid" src="/imgs/portfolio/keykitScreenshot.png" alt="KeyKit">
                 <h3 class="card-title mb-3">KeyKit</h3>
@@ -167,7 +111,10 @@
       </div>
     </section>
 
- 
+    <div class="hidden delay">
+      <a href="#"><i class="bi-arrow-up-circle-fill text-warning h1"></i></a>
+    </div>
+
     <!-- Bootstrap javascript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 

@@ -1,4 +1,4 @@
-// gesty.dev
+// gesty.dev 🏄
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +32,7 @@ $magenta: #bb9af7;
 body {
   width: 100%;
   height: 100vh;
-  /*height: 100%; for scrolling bg on firefox */
+  /*height: 100%; for scrolling bg in firefox */
   background-image: url(/imgs/backgrounds/homeBg.png);
   background-position: center center;
   background-size: cover;
@@ -40,6 +40,16 @@ body {
   background-attachment: fixed;
   font-size: 1.3rem;
   text-align: center;
+  // Scrollbar: (only in chrome)
+  &::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $bg;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $blue;
+  }
 }
 
 // Individual Background Images:
@@ -55,15 +65,10 @@ background-image:url(/imgs/backgrounds/contactBg.png);
   height: 100%;
 }
 
-// Scrollbar
-body::-webkit-scrollbar {
-  width: 0.5rem;
-}
-body::-webkit-scrollbar-track {
-  background: $bg;
-}
-body::-webkit-scrollbar-thumb {
-  background: $blue;
+// Profile Images:
+.profile {
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px $bg;
 }
 
 // Navbar
@@ -108,6 +113,38 @@ h3 {
   box-shadow: 0 0 1rem 0 $bg;
 }
 
+section {
+  font-size: 3.0rem;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 100vh;
+  min-width: 90vw;
+  z-index: -1;
+}
+p {
+  color: $text;
+  font-size: 1.5rem;
+  padding: 2px;
+  margin: 5px;
+  text-shadow: 10px 10px 10px $bg;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.smallText {
+  font-size: 1rem;
+}
+
+// About Page:
+.aboutBox {
+  @include infoBox;
+  margin-top: 10px;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
 // Contact Page:
 .contactPageMain {
   display: flex;
@@ -123,35 +160,6 @@ h3 {
   }
 }
 
-// About Page:
-.aboutBox {
-  @include infoBox;
-  margin-top: 10px;
-}
-
-// Paragraph Text:
-p {
-  color: $text;
-  font-size: 1.5rem;
-  padding: 2px;
-  margin: 5px;
-  text-shadow: 10px 10px 10px $bg;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.smallText {
-  font-size: 1rem;
-}
-
-section {
-  font-size: 3.0rem;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
-  min-width: 90vw;
-  z-index: -1;
-}
-
 // Animations:
 .hidden {
   opacity: 0;
@@ -164,27 +172,20 @@ section {
   filter: blur(0);
   transform: translateX(0);
 }
-
-// Photo Animations:
-.logos {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-.logo:nth-child(2) {
-  transition-delay: 200ms;
-}
-.logo:nth-child(3) {
-  transition-delay: 400ms;
-}
-.logo:nth-child(4) {
-  transition-delay: 600ms;
-}
-
-// Profile Images:
-.profile {
-  border-radius: 2rem;
-  box-shadow: 2px 2px 5px $bg;
+.delay {
+  transition-delay: 100ms;
+  &:nth-child(2) {
+    transition-delay: 200ms;
+  }
+  &:nth-child(3) {
+    transition-delay: 300ms;
+  }
+  &:nth-child(4) {
+    transition-delay: 400ms;
+  }
+  &:nth-child(5) {
+    transition-delay: 500ms;
+  }
 }
 
 /* Small Screen Response */
