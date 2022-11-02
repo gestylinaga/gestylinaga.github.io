@@ -1,4 +1,5 @@
 // gesty.dev 🏄
+
 * {
   margin: 0;
   padding: 0;
@@ -32,7 +33,7 @@ $magenta: #bb9af7;
 body {
   width: 100%;
   height: 100vh;
-  /*height: 100%; for scrolling bg in firefox */
+  /*height: 100%; for scrolling bg in Firefox */
   background-image: url(/imgs/backgrounds/homeBg.png);
   background-position: center center;
   background-size: cover;
@@ -40,7 +41,7 @@ body {
   background-attachment: fixed;
   font-size: 1.3rem;
   text-align: center;
-  // Scrollbar: (only in chrome)
+  // Scrollbar: (only in Chrome)
   &::-webkit-scrollbar {
     width: 0.5rem;
   }
@@ -52,17 +53,17 @@ body {
   }
 }
 
-// Individual Background Images:
+// Background Images:
 .about {
   background-image:url(/imgs/backgrounds/aboutBg.png);
-  height: 100%;
+  height: 100%; // needed for static bg in Firefox
 }
 .contact {
 background-image:url(/imgs/backgrounds/contactBg.png);
 }
 .portfolio {
   background-image:url(/imgs/backgrounds/portfolioBg.png);
-  height: 100%;
+  height: 100%; // needed for static bg in Firefox
 }
 
 // Profile Images:
@@ -122,6 +123,8 @@ section {
   min-width: 90vw;
   z-index: -1;
 }
+
+// Text:
 p {
   color: $text;
   font-size: 1.5rem;
