@@ -1,12 +1,5 @@
 // gesty.dev 🏄
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Gochi Hand', cursive;
-}
-
 // Colors:
 $text: #c0caf5;
 $bg: #24283b;
@@ -28,6 +21,13 @@ $magenta: #bb9af7;
   border-radius: 1rem;
   box-shadow: 0 0 1rem 0 $blue;
   padding: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gochi Hand', cursive;
 }
 
 body {
@@ -59,7 +59,7 @@ body {
   height: 100%; // needed for static bg in Firefox
 }
 .contact {
-background-image:url(/imgs/backgrounds/contactBg.png);
+  background-image:url(/imgs/backgrounds/contactBg.png);
 }
 .portfolio {
   background-image:url(/imgs/backgrounds/portfolioBg.png);
@@ -75,10 +75,6 @@ background-image:url(/imgs/backgrounds/contactBg.png);
 // Navbar
 nav{
   box-shadow: 0 0 1rem 0 $blue;
-}
-.dropdown a:hover {
-  background-color: $blue;
-  color: $bg !important;
 }
 
 // Links
