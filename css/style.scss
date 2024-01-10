@@ -1,210 +1,134 @@
-// gesty.dev 🏄
-
-// Colors:
-$text: #c0caf5;
-$bg: #24283b;
-$black: #1a1b26;
-$red: #f7768e;
-$blue: #7aa2f7;
-$green: #9ece6a;
-$orange: #ff9e64;
-$teal: #73daca;
-$yellow: #e0af68;
-$magenta: #bb9af7;
-
-// Mixins:
-@mixin text-shadow-bg {
-  text-shadow: 2px 2px 5px $bg;
-}
-@mixin infoBox {
-  background: $bg;
-  border-radius: 1rem;
-  box-shadow: 0 0 1rem 0 $blue;
-  padding: 10px;
-}
-
+// gesty.dev 🤙
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gochi Hand', cursive;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16pt;
+}
+
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 body {
-  width: 100%;
+  @include flex-col;
   height: 100vh;
-  /*height: 100%; for scrolling bg in Firefox */
-  background-image: url(/imgs/backgrounds/homeBg.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-size: 1.3rem;
-  text-align: center;
-  // Scrollbar: (only in Chrome)
-  &::-webkit-scrollbar {
-    width: 0.5rem;
-  }
-  &::-webkit-scrollbar-track {
-    background: $bg;
-  }
-  &::-webkit-scrollbar-thumb {
-    background: $text;
-  }
+  background-image: url(../imgs/backgrounds/yosemiteBG.webp);
+  //background-image: url(../imgs/backgrounds/sunkenCity.webp);
 }
 
-// Background Images:
-.about {
-  background-image:url(/imgs/backgrounds/aboutBg.png);
-  height: 100%; // needed for static bg in Firefox
-}
-.contact {
-  background-image:url(/imgs/backgrounds/contactBg.png);
-}
-.portfolio {
-  background-image:url(/imgs/backgrounds/portfolioBg.png);
-  height: 100%; // needed for static bg in Firefox
-}
-
-// Profile Images:
-.profile {
-  border-radius: 2rem;
-  box-shadow: 2px 2px 5px $bg;
-}
-
-// Navbar
-nav{
-  box-shadow: 0 0 1rem 0 $blue;
-}
-
-// Links
-a {
-  font-size: 1.5rem;
-  color: $text;
-  text-decoration: none;
-  font-family: 'Source Sans Pro', sans-serif;
-  &:hover {
-    text-decoration: underline;
-    color: white;
-    cursor: pointer;
-  }
-}
-
-// Headers:
-h1 {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 3px 3px 5px $black;
-}
+h1,
 h2 {
-  color: $red;
-  font-size: 4rem;
-  @include text-shadow-bg;
+  font-family: 'Caveat', cursive;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
 }
-h3 {
-  color: $blue;
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
   font-size: 2rem;
-  @include text-shadow-bg;
-}
-.headerImg {
-  box-shadow: 0 0 1rem 0 $bg;
 }
 
-section {
-  font-size: 3.0rem;
-  display: grid;
-  place-items: center;
-  align-content: center;
-  min-height: 100vh;
-  min-width: 90vw;
-  z-index: -1;
+main {
+  @include flex-col;
 }
 
-// Text:
-p {
-  color: $text;
-  font-size: 1.5rem;
-  padding: 2px;
-  margin: 5px;
-  text-shadow: 10px 10px 10px $bg;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-.smallText {
-  font-size: 1rem;
+header {
+  @include flex-col;
+  position: relative;
+  text-align: center;
 }
 
-// About Page:
-.aboutBox {
-  @include infoBox;
-  margin-top: 10px;
-}
-.logos {
+.hero {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
-}
-
-// Contact Page:
-.contactPageMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-.contactInfoBox {
-  @include infoBox;
-  & p {
-    color: $text;
+  gap: 1rem;
+
+  & > img {
+    border-radius: 60px;
   }
 }
 
-// Animations:
+nav { 
+  display: flex;
+  padding-top: 1rem;
+  z-index: 9000;
+
+  & > ul {
+    list-style: none;
+    display: flex;
+    border: solid 1px #000;
+    border-radius: 4px;
+    //transform: translateX(15%);
+
+    & > li {
+      border-left: solid 1px #000;
+      border-right: solid 1px #000;
+
+      &:hover {
+        background-color: rgba(255,255,255, 0.75);
+      }
+
+      & > a {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: inherit;
+        width: 100%;
+        height: 100%;
+        padding: 5px 10px 10px 10px;
+      }
+    }
+  }
+}
+
+article {
+  position: absolute;
+  display: block;
+}
+
 .hidden {
   opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-10%);
-  transition: all 1s;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
-.delay {
-  transition-delay: 100ms;
-  &:nth-child(2) {
-    transition-delay: 200ms;
-  }
-  &:nth-child(3) {
-    transition-delay: 300ms;
-  }
-  &:nth-child(4) {
-    transition-delay: 400ms;
-  }
-  &:nth-child(5) {
-    transition-delay: 500ms;
-  }
 }
 
-/* Small Screen Response */
-@media (max-width: 576px) {
-  body {
-    background-position: center center;
-    background-size: 100vh center;
+.container {
+  @include flex-col;
+  //gap: 2em;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (min-width: 575px) {
+  .container {
+    max-width: 540px;
   }
-  .headerImg {
-    width: 95vw;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
   }
-  .logos {
-    flex-direction: column;
-    gap: 0.5rem;
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
   }
-  .aboutBox {
-    width: 95vw;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
   }
-  .contactPageMain {
-    display: flex;
-    flex-direction: column;
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
   }
 }
