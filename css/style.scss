@@ -35,6 +35,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  text-decoration: underline;
+  text-underline-offset: 10px;
 }
 
 main {
@@ -66,7 +68,6 @@ nav {
     display: flex;
     border: solid 1px #000;
     border-radius: 4px;
-    //transform: translateX(15%);
 
     & > li {
       border-left: solid 1px #000;
@@ -166,6 +167,31 @@ article {
     background-color: rgba(255,255,255, 0.25);
     border-radius: 5px;
   }
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+.social-list {
+  @include flex-col;
+  width: 100%;
+  text-align: end;
+  align-items: end;
+  gap: 1rem;
+}
+.social {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo {
+  width: 30px;
+  fill: #fff;
 }
 
 .container {
