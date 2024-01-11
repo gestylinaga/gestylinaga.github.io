@@ -13,6 +13,7 @@ body {
   justify-content: center;
   height: 100vh;
   background-image: url(../imgs/backgrounds/yosemiteBG.webp);
+  background-attachment: fixed;
 }
 
 h1,
@@ -71,7 +72,7 @@ nav > ul > li {
   border-right: solid 1px #000;
 }
 nav > ul > li:hover {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 nav > ul > li > a {
   display: block;
@@ -82,14 +83,37 @@ nav > ul > li > a {
   height: 100%;
   padding: 5px 10px 10px 10px;
 }
+nav > ul > li > a:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
 
 article {
   position: absolute;
   display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 40rem;
 }
 
 .hidden {
   opacity: 0;
+}
+
+#back {
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  margin-right: 1rem;
+  color: #fff;
+  padding: 5px;
+  font-size: 1.5rem;
+}
+#back:focus {
+  outline: thin dotted;
 }
 
 .container {
@@ -102,6 +126,7 @@ article {
   margin-left: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+  gap: 1rem;
 }
 
 @media (min-width: 575px) {
