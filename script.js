@@ -60,3 +60,7 @@ window.addEventListener("hashchange", () => {
   handleDirectLinks(location.hash)
 })
 
+window.addEventListener("load", () => {
+  handleDirectLinks(location.hash)
+})
+
