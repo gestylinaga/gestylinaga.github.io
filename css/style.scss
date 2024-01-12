@@ -18,10 +18,10 @@ body {
   @include flex-col;
   height: 100vh;
   background-image: url(../imgs/backgrounds/yosemiteBG.webp);
-  //background-image: url(../imgs/backgrounds/sunkenCity.webp);
   background-attachment: fixed;
 }
 
+// Header Texts
 h1,
 h2,
 h3 {
@@ -50,6 +50,7 @@ main {
   @include flex-col;
 }
 
+// Hero/Header Styles Section
 header {
   @include flex-col;
   position: relative;
@@ -63,9 +64,11 @@ header {
 
   & > img {
     border-radius: 60px;
+    transform: scaleX(-1);
   }
 }
 
+// Navbar
 nav { 
   display: flex;
   padding-top: 1rem;
@@ -103,6 +106,7 @@ nav {
   }
 }
 
+// General Article Styles
 article {
   position: absolute;
   display: block;
@@ -111,7 +115,8 @@ article {
   backdrop-filter: blur(10px);
   border-radius: 5px;
   padding: 1rem 2rem 1rem 2rem;
-  width: 40rem;
+  width: 100%;
+  max-width: 40rem;
 }
 
 .hidden {
@@ -176,6 +181,7 @@ article {
   }
 }
 
+// About Section Style
 .about-section {
   @include flex-col;
   align-items: normal;
@@ -191,7 +197,6 @@ article {
 
   & > p {
     // slightly off-white
-    //color: #e6e9ef;
     color: #d9d9d9;
 
     & > strong {
@@ -201,11 +206,13 @@ article {
 
 }
 
+// Contact Section Style
 .contact-section {
   display: flex;
   justify-content: space-evenly;
   gap: 3rem;
 }
+
 .social-list {
   @include flex-col;
   width: 100%;
@@ -213,6 +220,7 @@ article {
   align-items: end;
   gap: 1rem;
 }
+
 .social {
   color: #fff;
   text-decoration: none;
@@ -226,6 +234,7 @@ article {
   fill: #fff;
 }
 
+// General responsive container
 .container {
   @include flex-col;
   width: 100%;
@@ -258,5 +267,55 @@ article {
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
+  }
+}
+
+// Small screen specific
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-text {
+    & > p {
+      font-size: 14pt;
+    }
+
+    & > h1 {
+      line-height: 90%;
+    }
+  }
+
+  nav > ul {
+    flex-direction: column;
+
+    & > li {
+      border-top: solid 1px #000;
+      border-bottom: solid 1px #000;
+    }
+  }
+
+  article {
+    width: 95%;
+    overflow-x: hidden;
+  }
+
+  .scrollable {
+    height: 95vh;
+  }
+
+  .about-section > p {
+    font-size: 14pt !important;
+  }
+
+  .contact-section {
+    flex-direction: column;
   }
 }
