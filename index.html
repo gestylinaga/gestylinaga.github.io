@@ -38,7 +38,7 @@
 
       <article id="about" class="hidden scrollable">
         <a href="#" id="back">X</a>
-        <div class="container">
+        <div class="container" id="about-top">
           <img src="./imgs/profile/profileDesert.webp" alt="Gesty Linaga in Death Valley">
           <div class="about-section">
             <h3>About</h3>
@@ -66,13 +66,143 @@
             <p><strong>Software </strong>| Git | NodeJS | GIMP | NeoVim | Vim | VS Code |</p>
           </div>
         </div>
+        <a href="#about-top" class="top-link">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+          </svg>
+        </a>
       </article>
 
-      <article id="portfolio" class="hidden">
+      <article id="portfolio" class="hidden scrollable">
         <a href="#" id="back">X</a>
-        <div class="container">
+        <div class="container" id="portfolio-top">
           <h2>Portfolio</h2>
-          <p>Grom break goofy footed inside tubular slotted. Backdoor clean quiver salty, lines cross-step slab. Crest noodle arms haole amped nose riding rails froth. Shore-break mini simmons off the lip rails, glassy bomb switch, the wedge mavericks skunked. Grom backside hang-five surfboard ding shaper, spit. Localism bro pig-dog malibu salty washing machine fish froth, out the back paddle. Stoked ankle slappers nose riding drop drop-in swell single fin greenroom swamis. Aggro psyched over the falls riptide brah re-entry party wave head-dip. Outside break shacked hang-ten springsuit fin alaia. Stringer floater board nose stoked lip hollow good vibes, longboard blacks.</p>
+          <div class="portfolio-section">
+
+            <h3 class="portfolio-header">Full Websites</h3>
+
+            <div class="portfolio-item">
+                <a href="https://alchielesaca.com" target="_blank">
+                  <img src="./imgs/portfolio/alchieLesacaScreenshot.webp" alt="Screenshot of alchielesaca.com">
+                </a>
+                <div class="portfolio-desc">
+                  <a href="https://alchielesaca.com" target="_blank">
+                    <h3>alchielesaca.com</h3>
+                  </a>
+                  <p>A personal website for cinematographer / photographer <br>
+                  Alchie Lesaca</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://louvenreyes.com" target="_blank">
+                <img src="./imgs/portfolio/louvenreyesScreenshot.webp" alt="Screenshot of louvenreyes.com">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://louvenreyes.com" target="_blank">
+                  <h3>louvenreyes.com</h3>
+                </a>
+                <p>A personal website for cinematographer <br>Louven Reyes</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://bandeloviar.com" target="_blank">
+                <img src="./imgs/portfolio/banDeloviarScreenshot.webp" alt="Screenshot of bandeloviar.com">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://bandeloviar.com" target="_blank">
+                  <h3>bandeloviar.com</h3>
+                </a>
+                <p>A personal website for photographer <br>Ban Deloviar</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://github.com/gestylinaga/gestylinaga.github.io" target="_blank">
+                <img src="./imgs/portfolio/gestyScreenshot.webp" alt="Screenshot of gesty.dev">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://github.com/gestylinaga/gestylinaga.github.io" target="_blank">
+                  <h3>gesty.dev</h3>
+                </a>
+                <p>Source code for <em>this</em> website on GitHub</p>
+              </div>
+            </div>
+
+            <h3 class="portfolio-header">Side Projects</h3>
+
+            <div class="portfolio-item">
+              <a href="https://gesty.dev/surfSum" target="_blank">
+                <img src="./imgs/portfolio/surfSumScreenshot.webp" alt="Screenshot of surfSum">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://gesty.dev/surfSum" target="_blank">
+                  <h3>surfSum</h3>
+                </a>
+                <p>A lorem ipsum generator in surf slang. Inspired by: <br>
+                <a href="https://hipsum.co" target="_blank">Hipster Ipsum</a></p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://notes.gesty.dev" target="_blank">
+                <img src="./imgs/portfolio/notesScreenshot.webp" alt="Screenshot of notes.gesty.dev">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://notes.gesty.dev" target="_blank">
+                  <h3>Notes On...</h3>
+                </a>
+                <p>Notes on things I'm learning. An excercise in writing 
+                Markdown, and using Astro as a static site builder.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://gesty.dev/randomimgr" target="_blank">
+                <img src="./imgs/portfolio/randomimgrScreenshot.webp" alt="Screenshot of RandomImgr">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://gesty.dev/randomimgr" target="_blank">
+                  <h3>RandomImgr</h3>
+                </a>
+                <p>A random image generator front-end. Like lorem ipsum text, 
+                but with images.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://gesty.dev/samplesite-landing" target="_blank">
+                <img src="./imgs/portfolio/samplesite-landingScreenshot.webp" alt="Screenshot of SampleSite-Landing">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://gesty.dev/samplesite-landing" target="_blank">
+                  <h3>Landing Page</h3>
+                </a>
+                <p>A "Blank" example landing page - a long, single page of content</p>
+              </div>
+            </div>
+
+            <div class="portfolio-item">
+              <a href="https://gesty.dev/samplesite-photo" target="_blank">
+                <img src="./imgs/portfolio/samplesite-photoScreenshot.webp" alt="Screenshot of SampleSite-Photo">
+              </a>
+              <div class="portfolio-desc">
+                <a href="https://gesty.dev/samplesite-photo" target="_blank">
+                  <h3>Photo Portfolio</h3>
+                </a>
+                <p>A "Blank" example website - in a portfolio-style for a photographer</p>
+              </div>
+            </div>
+
+
+            <a href="#portfolio-top" class="top-link">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5 12 3m0 0 7.5 7.5M12 3v18" />
+              </svg>
+            </a>
+
+          </div>
         </div>
       </article>
 

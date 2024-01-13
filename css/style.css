@@ -177,6 +177,17 @@ article {
   border-radius: 5px;
 }
 
+.top-link {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+  padding-inline: 1rem;
+}
+.top-link svg {
+  width: 40px;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;
@@ -197,6 +208,39 @@ article {
 }
 .about-section > p > strong {
   color: #fff;
+}
+
+.portfolio-header {
+  text-align: start;
+  padding-block: 0.5rem 1rem;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding-right: 1rem;
+  padding-block: 1rem 1rem;
+}
+.portfolio-item img {
+  width: 400px;
+}
+
+.portfolio-desc {
+  text-align: right;
+  padding-left: 1rem;
+}
+.portfolio-desc a {
+  color: #fff;
+  text-decoration: none;
+}
+.portfolio-desc a > h3 {
+  padding-top: 0;
+}
+.portfolio-desc p a {
+  text-decoration: underline dotted;
+  text-underline-offset: 5px;
 }
 
 .contact-section {
@@ -307,6 +351,16 @@ article {
   }
   .about-section > p {
     font-size: 14pt !important;
+  }
+  .portfolio-item {
+    flex-direction: column;
+    padding-inline: 0 0;
+  }
+  .portfolio-item a img {
+    width: 80vw;
+  }
+  .portfolio-desc {
+    text-align: center;
   }
   .contact-section {
     flex-direction: column;

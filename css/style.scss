@@ -192,6 +192,18 @@ article {
   }
 }
 
+.top-link {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  text-decoration: none;
+  padding-inline: 1rem;
+
+  & svg {
+    width: 40px;
+  }
+}
+
 // About Section Style
 .about-section {
   @include flex-col;
@@ -215,6 +227,46 @@ article {
     }
   }
 
+}
+
+// Portfolio Section Style
+.portfolio-header {
+  text-align: start;
+  padding-block: 0.5rem 1rem;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding-right: 1rem;
+  padding-block: 1rem 1rem;
+
+  & img {
+    width: 400px;
+  }
+}
+
+.portfolio-desc {
+  text-align: right;
+  padding-left: 1rem;
+
+  & a {
+    color: #fff;
+    text-decoration: none;
+
+    & > h3 {
+      padding-top: 0;
+    }
+  }
+
+  & p {
+    & a {
+      text-decoration: underline dotted;
+      text-underline-offset: 5px;
+    }
+  }
 }
 
 // Contact Section Style
@@ -334,6 +386,19 @@ article {
 
   .about-section > p {
     font-size: 14pt !important;
+  }
+
+  .portfolio-item {
+    flex-direction: column;
+    padding-inline: 0 0;
+
+    a img {
+      width: 80vw;
+    }
+  }
+
+  .portfolio-desc {
+    text-align: center;
   }
 
   .contact-section {
