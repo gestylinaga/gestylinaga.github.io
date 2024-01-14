@@ -399,7 +399,7 @@ article {
     overflow-x: hidden;
   }
   .scrollable {
-    height: 75vh;
+    height: 85vh;
   }
   .about-section > p {
     font-size: 14pt !important;
