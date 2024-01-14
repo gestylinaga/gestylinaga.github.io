@@ -72,3 +72,26 @@ window.addEventListener("load", () => {
   handleDirectLinks(location.hash)
 })
 
+// IntersectionObserver animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("animate");
+    } else {
+      entry.target.classList.remove("animate");
+    }
+  })
+})
+
+const animateLeft = document.querySelectorAll(".animate-left");
+animateLeft.forEach((el) => observer.observe(el))
+
+const animateRight = document.querySelectorAll(".animate-right");
+animateRight.forEach((el) => observer.observe(el))
+
+const animateUp = document.querySelectorAll(".animate-up");
+animateUp.forEach((el) => observer.observe(el))
+
+const animateDown = document.querySelectorAll(".animate-down");
+animateDown.forEach((el) => observer.observe(el))
+

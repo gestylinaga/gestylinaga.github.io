@@ -273,6 +273,57 @@ article {
   fill: #fff;
 }
 
+.animate-left {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(-100%);
+}
+
+.animate-right {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateX(100%);
+}
+
+.animate-up {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateY(100%);
+}
+
+.animate-down {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transform: translateY(-100%);
+}
+
+.animate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+.delay {
+  transition-delay: 100ms;
+}
+.delay:nth-child(2) {
+  transition-delay: 200ms;
+}
+.delay:nth-child(3) {
+  transition-delay: 300ms;
+}
+.delay:nth-child(4) {
+  transition-delay: 400ms;
+}
+.delay:nth-child(5) {
+  transition-delay: 500ms;
+}
+
 .container {
   display: flex;
   flex-direction: column;
