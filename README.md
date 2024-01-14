@@ -1,8 +1,9 @@
 # gesty.dev
-Source Code for [gesty.dev](https://gesty.dev) 🌐 <-- **Link to Live Site**
+<p style="text-align: center">
+<strong>Source Code</strong> for <a href="https://gesty.dev">gesty.dev</a>
+</p>
 
-Full site rewrite in progess...
-![Screenshot](./imgs/backgrounds/yosemiteBG.webp)
+![Gesty at Yosemite Point](./imgs/backgrounds/yosemiteBG.webp)
 
 Previously named [gestylinaga.github.io](https://gestylinaga.github.io) 
 <-- **Link still works though**
