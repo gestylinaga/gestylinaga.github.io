@@ -404,6 +404,7 @@ article {
     padding-right: 1rem;
     width: 100%;
     max-width: 100vw;
+    text-shadow: 1px 1px 10px #000;
   }
 
   .hero-text {
@@ -431,7 +432,7 @@ article {
   }
 
   .scrollable {
-    height: 95vh;
+    height: 75vh;
   }
 
   .about-section > p {
