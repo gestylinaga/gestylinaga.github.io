@@ -1,5 +1,5 @@
 # gesty.dev
-<p style="text-align: center">
+<p align="center">
 <strong>Source Code</strong> for <a href="https://gesty.dev">gesty.dev</a>
 </p>
 
