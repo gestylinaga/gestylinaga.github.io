@@ -183,6 +183,7 @@ article {
   color: #fff;
   text-decoration: none;
   padding-inline: 1rem;
+  padding-block: 1rem;
 }
 .top-link svg {
   width: 40px;
