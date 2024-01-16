@@ -39,7 +39,7 @@ function reset() {
 
 function handleDirectLinks(locationHash) {
   const current = locationHash.slice(1);
-  for (article of articleList) {
+  for (let article of articleList) {
     const articleID = article.getAttribute("id");
     const targetArticle = document.getElementById(articleID);
     if (current === articleID) {
