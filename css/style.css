@@ -189,6 +189,11 @@ article {
   width: 40px;
 }
 
+.about-img {
+  display: block;
+  max-width: 100%;
+}
+
 .about-section {
   display: flex;
   flex-direction: column;

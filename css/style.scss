@@ -206,6 +206,11 @@ article {
 }
 
 // About Section Style
+.about-img {
+  display: block;
+  max-width: 100%;
+}
+
 .about-section {
   @include flex-col;
   align-items: normal;
