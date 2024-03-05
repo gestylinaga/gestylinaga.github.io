@@ -12,14 +12,21 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: url(../imgs/backgrounds/yosemiteBG.webp);
+  background-image: url("../imgs/backgrounds/yosemiteBG.webp");
   background-attachment: fixed;
 }
 
+@font-face {
+  font-family: "Rock Salt";
+  src: url("./RockSalt-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 h1,
 h2,
 h3 {
-  font-family: "Rock Salt", cursive;
+  font-family: "Rock Salt";
   line-height: 1.5;
   letter-spacing: 0.1rem;
 }
